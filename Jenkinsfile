@@ -7,7 +7,7 @@ pipeline {
                echo " Compiling and Building code...."
             }
         }
-        stage('Deploy code FE1) {
+        stage('Deploy code FE1') {
             steps {
                 echo " Code is deployed on FE1 environment"
             }
