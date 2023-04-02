@@ -1,14 +1,28 @@
 pipeline {
    agent any
     stages {
-        stage('Example stage 1') {
+        stage('Checkout& Build ') {
             steps {
-                echo " Hello Ambadas"
+                echo " Checking Out code from Git Repo"
+               echo " Compiling and Building code...."
             }
         }
-        stage('Example stage 2') {
+        stage('Deploy code FE1) {
             steps {
-                echo " Hello Ambadas Deshpande"
+                echo " Code is deployed on FE1 environment"
+            }
+        stage('Deploy on SIT') {
+            steps {
+              echo " Code is deployed on SIT environment"
+            }
+              
+       stage('Deploy on UAT') {
+            steps {
+               echo " Code is deployed on UAT environment"
+            }
+        stage('Deploy on Prod ') {
+            steps {
+                echo " Code is deployed on PROD environment"
             }
         }
     }
