@@ -11,19 +11,23 @@ pipeline {
             steps {
                 echo " Code is deployed on FE1 environment"
             }
+        }
         stage('Deploy on SIT') {
             steps {
               echo " Code is deployed on SIT environment"
             }
+        }
               
        stage('Deploy on UAT') {
             steps {
                echo " Code is deployed on UAT environment"
             }
+       }
         stage('Deploy on Prod ') {
             steps {
                 echo " Code is deployed on PROD environment"
             }
         }
+        
     }
 }
